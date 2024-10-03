@@ -1,18 +1,19 @@
 def plusMinus(arr):
-    
+
     positive_counts = 0
     negative_counts = 0
     zero_counts = 0
     
     total_counts = len(arr)
     
-    for number in arr:
-        if number > 0:
+    for num in arr:
+        if num > 0:
             positive_counts += 1
-        if number < 0:
+        if num < 0:
             negative_counts += 1
-        if number == 0:
+        if num == 0:
             zero_counts += 1
+
     positive_count_ratio = positive_counts/total_counts
     negative_count_ratio = negative_counts/total_counts
     zero_count_ratio = zero_counts/total_counts
